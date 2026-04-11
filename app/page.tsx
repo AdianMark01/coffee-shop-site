@@ -100,6 +100,13 @@ export default function Home() {
   </div>
 </section>
 
+ {/* FOOTER */}
+<footer className="bg-black text-white py-10 text-center">
+  <p className="text-lg font-semibold">Brew Haven ☕</p>
+  <p className="text-gray-400 mt-2">
+    © 2026 Brew Haven Coffee Shop. All rights reserved.
+  </p>
+</footer>
     </main>
   );
 }
