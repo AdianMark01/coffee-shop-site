@@ -27,15 +27,31 @@ export const metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en">
+      <body>
+
+        {/* NAVBAR (GLOBAL) */}
+        <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+          <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 className="font-bold text-xl">Brew Haven ☕</h1>
+
+            <div className="space-x-6 font-semibold">
+              <a href="/" className="hover:text-gray-500">Home</a>
+              <a href="/blog" className="hover:text-gray-500">Blog</a>
+            </div>
+          </div>
+        </nav>
+
+        {/* PAGE CONTENT */}
+        <div className="pt-24">
+          {children}
+        </div>
+
+      </body>
     </html>
   );
 }
