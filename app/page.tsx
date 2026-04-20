@@ -1,18 +1,5 @@
 export default function Home() {
   return (
-      <>
-      {/* NAVBAR */}
-      <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-          <h1 className="font-bold text-xl">Brew Haven ☕</h1>
-
-          <div className="space-x-6 font-semibold">
-            <a href="#services" className="hover:text-gray-500">Services</a>
-            <a href="#about" className="hover:text-gray-500">About</a>
-            <a href="#contact" className="hover:text-gray-500">Contact</a>
-          </div>
-        </div>
-      </nav>
       <main className="min-h-screen bg-amber-50 text-gray-900 pt-24">
       {/* HERO SECTION */}
       <section className="text-center py-40 px-6">
@@ -132,6 +119,5 @@ export default function Home() {
   </p>
 </footer>
     </main>
-    </>
   );
 }
