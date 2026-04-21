@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,9 +33,44 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" data-scroll-behavior="smooth">
       <body>
-
+        {/* SCHEMA MARKUP */}
+        <Script
+          id="local-business-schema"
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "CafeOrCoffeeShop",
+              name: "Brew Haven Coffee Shop",
+              url: "https://coffee-shop-site.vercel.app",
+              telephone: "+63 912 345 6789",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "123 Brew Street",
+                addressLocality: "Manila",
+                addressCountry: "PH",
+              },
+              servesCuisine: "Coffee",
+              priceRange: "$",
+            }),
+          }}
+        />
+        <Script
+          id="website-schema"
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "Brew Haven Coffee Shop",
+              url: "https://coffee-shop-site.vercel.app",
+            }),
+          }}
+        />
         {/* NAVBAR (GLOBAL) */}
         <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
           <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">

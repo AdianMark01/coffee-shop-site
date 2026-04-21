@@ -1,5 +1,7 @@
+import Script from "next/script";
 export default function Home() {
   return (
+    <>
       <main className="min-h-screen bg-amber-50 text-gray-900 pt-24">
       {/* HERO SECTION */}
       <section className="text-center py-40 px-6">
@@ -29,7 +31,7 @@ export default function Home() {
       </section>
 
       {/* SERVICES SECTION */}
-      <section className="py-20 px-6 bg-white">
+      <section id="services" className="py-20 px-6 bg-white">
         <h2 className="text-4xl font-bold text-center mb-12">
           Our Specialties
         </h2>
@@ -55,7 +57,7 @@ export default function Home() {
       </section>
       
       {/* ABOUT SECTION */}
-      <section className="py-20 px-6 bg-amber-100 text-center">
+      <section id="about" className="py-20 px-6 bg-amber-100 text-center">
         <h2 className="text-4xl font-bold mb-8">About Brew Haven</h2>
 
         <p className="max-w-3xl mx-auto text-lg leading-relaxed">
@@ -66,58 +68,72 @@ export default function Home() {
         </p>
       </section>
       {/* CONTACT SECTION */}
-<section className="py-20 px-6 bg-white text-center">
-  <h2 className="text-4xl font-bold mb-10">Contact Us</h2>
+      <section id="contact" className="py-20 px-6 bg-white text-center">
+        <h2 className="text-4xl font-bold mb-10">Contact Us</h2>
 
-  <div className="max-w-3xl mx-auto space-y-6">
+        <div className="max-w-3xl mx-auto space-y-6">
 
-    <p className="text-lg">
-      📍 123 Brew Street, Manila, Philippines
-    </p>
+          <p className="text-lg">
+            📍 123 Brew Street, Manila, Philippines
+          </p>
 
-    <p className="text-lg">
-      📞 +63 912 345 6789
-    </p>
+          <p className="text-lg">
+            📞 +63 912 345 6789
+          </p>
 
-    <p className="text-lg">
-      ✉️ hello@brewhaven.com
-    </p>
+          <p className="text-lg">
+            ✉️ hello@brewhaven.com
+          </p>
 
-    {/* Simple Form */}
-    <div className="mt-10 space-y-4">
-      <input
-        type="text"
-        placeholder="Your Name"
-        className="w-full p-4 border rounded-xl"
-      />
+        {/* Simple Form */}
+        <div className="mt-10 space-y-4">
+          <input
+            type="text"
+            placeholder="Your Name"
+            className="w-full p-4 border rounded-xl"
+          />
 
-      <input
-        type="email"
-        placeholder="Your Email"
-        className="w-full p-4 border rounded-xl"
-      />
+          <input
+            type="email"
+            placeholder="Your Email"
+            className="w-full p-4 border rounded-xl"
+          />
 
-      <textarea
-        placeholder="Your Message"
-        rows={4}
-        className="w-full p-4 border rounded-xl"
-      />
+          <textarea
+            placeholder="Your Message"
+            rows={4}
+            className="w-full p-4 border rounded-xl"
+          />
 
-      <button className="bg-black text-white px-8 py-4 rounded-xl hover:bg-gray-800">
-        Send Message
-      </button>
-    </div>
+          <button className="bg-black text-white px-8 py-4 rounded-xl hover:bg-gray-800">
+            Send Message
+          </button>
+         </div>
 
-  </div>
-</section>
+        </div>
+      </section>
 
- {/* FOOTER */}
-<footer className="bg-black text-white py-10 text-center">
-  <p className="text-lg font-semibold">Brew Haven ☕</p>
-  <p className="text-gray-400 mt-2">
-    © 2026 Brew Haven Coffee Shop. All rights reserved.
-  </p>
-</footer>
-    </main>
-  );
+      {/* FOOTER */}
+      <footer className="bg-black text-white py-10 text-center">
+        <p className="text-lg font-semibold">Brew Haven ☕</p>
+        <p className="text-gray-400 mt-2">
+          © 2026 Brew Haven Coffee Shop. All rights reserved.
+        </p>
+      </footer>
+</main>
+
+<Script id="smooth-scroll">
+  {`
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href'))
+          .scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  `}
+</Script>
+
+</>
+);
 }
