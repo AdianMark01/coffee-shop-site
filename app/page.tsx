@@ -122,16 +122,24 @@ export default function Home() {
       </footer>
 </main>
 
-<Script id="smooth-scroll">
-  {`
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
+<Script id="smooth-scroll" strategy="afterInteractive">
+{`
+  document.querySelectorAll('a[href*="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const href = this.getAttribute('href');
+
+      // extract the #section part from /#section or #section
+      const id = href.substring(href.indexOf('#'));
+      const target = document.querySelector(id);
+
+      if (target) {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href'))
-          .scrollIntoView({ behavior: 'smooth' });
-      });
+        target.scrollIntoView({ behavior: 'smooth' });
+        history.pushState(null, null, id); // keeps URL updated
+      }
     });
-  `}
+  });
+`}
 </Script>
 
 </>
