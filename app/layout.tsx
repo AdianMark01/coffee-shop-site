@@ -77,10 +77,12 @@ export default function RootLayout({
             <h1 className="font-bold text-xl">Brew Haven ☕</h1>
               <div className="space-x-6 font-semibold">
                 <Link href="/" className="hover:text-gray-500">Home</Link>
-                <a href="#services" className="hover:text-gray-500">Services</a>
-                <a href="#about" className="hover:text-gray-500">About</a>
+
+                <a href="/#services" className="hover:text-gray-500">Services</a>
+                <a href="/#about" className="hover:text-gray-500">About</a>
+                <a href="/#contact" className="hover:text-gray-500">Contact</a>
+
                 <Link href="/blog" className="hover:text-gray-500">Blog</Link>
-                <a href="#contact" className="hover:text-gray-500">Contact</a>
               </div>
           </div>
         </nav>

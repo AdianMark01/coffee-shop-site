@@ -1,5 +1,7 @@
+
 export default function Post() {
   return (
+    
     <main className="min-h-screen bg-amber-50 p-10">
       <div className="max-w-3xl mx-auto bg-white p-10 rounded-xl shadow-md">
 
