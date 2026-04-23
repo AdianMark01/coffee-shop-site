@@ -1,4 +1,4 @@
-
+import Image from "next/image";
 export default function Post() {
   return (
     
@@ -8,6 +8,13 @@ export default function Post() {
         <h1 className="text-4xl font-bold mb-6">
           Best Coffee Shops in Manila ☕
         </h1>
+        <Image
+          src="/blog/coffee-shop.jpg"
+          alt="Best coffee shops in Manila"
+          width={1200}
+          height={600}
+          className="rounded-xl mb-6"
+        />
 
         <p className="mb-4">
           Manila is full of amazing coffee shops perfect for studying,
