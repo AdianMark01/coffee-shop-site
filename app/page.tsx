@@ -3,30 +3,39 @@ export default function Home() {
   return (
     <>
       <main className="min-h-screen bg-amber-50 text-gray-900 pt-24">
-      {/* HERO SECTION */}
+      {/* DEVELOPER HERO */}
       <section className="text-center py-40 px-6">
         <div className="max-w-3xl mx-auto">
+
+          <p className="text-lg text-gray-500 mb-4">
+            👋 Hi, I'm
+          </p>
+
           <h1 className="text-6xl font-bold mb-6">
-            Brew Haven ☕
+            Mark Adrian Dela Cruz
           </h1>
 
-          <p className="text-2xl mb-10 text-gray-700">
-            Freshly brewed happiness in every cup.
-            Your cozy space to work, relax, and recharge.
+          <p className="text-2xl text-gray-700 mb-10">
+            Aspiring Frontend Developer  
+            building modern websites using React & Next.js
           </p>
 
           <div className="flex justify-center gap-6">
-            <button className="bg-black text-white px-8 py-4 rounded-xl text-lg hover:bg-gray-800">
-              Visit Us Today
-            </button>
+            <a
+              href="/projects"
+              className="bg-black text-white px-8 py-4 rounded-xl text-lg hover:bg-gray-800"
+            >
+              View My Projects
+            </a>
 
             <a
               href="#contact"
               className="border-2 border-black px-8 py-4 rounded-xl text-lg hover:bg-black hover:text-white transition"
             >
-              Contact Us
+              Contact Me
             </a>
           </div>
+
         </div>
       </section>
 
