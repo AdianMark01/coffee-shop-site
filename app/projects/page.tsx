@@ -18,23 +18,24 @@ export default function ProjectsPage() {
             Includes responsive layout, blog pages, SEO basics, and deployment via Vercel.
           </p>
 
-          <div className="flex gap-4">
-            <a
-              href="https://coffee-shop-site.vercel.app"
-              target="_blank"
-              className="bg-black text-white px-5 py-3 rounded-lg hover:bg-gray-800"
-            >
-              Live Site
-            </a>
+          <div className="flex justify-center gap-6 mt-4">
+          <a
+            href="https://coffee-shop-site.vercel.app"
+            target="_blank"
+            className="bg-black text-white px-6 py-2 rounded-lg hover:bg-gray-800"
+          >
+            Live Demo
+          </a>
 
-            <a
-              href="https://github.com/AdianMark01/coffee-shop-site"
-              target="_blank"
-              className="border-2 border-black px-5 py-3 rounded-lg hover:bg-black hover:text-white"
-            >
-              GitHub Repo
-            </a>
-          </div>
+          <a
+            href="https://github.com/AdianMark01/coffee-shop-sites"
+            target="_blank"
+            className="border-2 border-black px-6 py-2 rounded-lg hover:bg-black hover:text-white"
+          >
+            GitHub Code
+          </a>
+
+        </div>
         </div>
 
         {/* Project 2 */}

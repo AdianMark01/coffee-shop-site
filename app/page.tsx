@@ -12,7 +12,31 @@ export default function Home() {
           Entry-level Web Developer specializing in React, Next.js and modern web apps.
           I build clean, responsive, and user-friendly websites.
         </p>
+        {/* SOCIAL LINKS */}
+        <div className="flex justify-center gap-6 mb-10 text-lg">
+          <a 
+            href="https://github.com/AdianMark01" 
+            target="_blank"
+            className="underline hover:text-gray-600"
+          >
+            GitHub
+          </a>
 
+          <a 
+            href="www.linkedin.com/in/mark-adrian-aguilar-a615b5232" 
+            target="_blank"
+            className="underline hover:text-gray-600"
+          >
+            LinkedIn
+          </a>
+
+          <a 
+            href="markadrianaguilar98@gmail.com"
+            className="underline hover:text-gray-600"
+          >
+            Email
+          </a>
+        </div>
         <div className="flex justify-center gap-6 flex-wrap">
 
         <a
@@ -102,7 +126,15 @@ export default function Home() {
           Let's Work Together
         </a>
       </section>
-
+      {/* FOOTER */}
+      <footer className="bg-black text-white py-10 text-center">
+        <p className="text-lg font-semibold">
+          Mark Adrian Dela Cruz — Frontend Developer
+        </p>
+        <p className="text-gray-400 mt-2">
+          © 2026 Mark Adrian Dela Cruz. Built with Next.js & Tailwind.
+        </p>
+      </footer>
     </main>
   );
 }
