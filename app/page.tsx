@@ -13,21 +13,31 @@ export default function Home() {
           I build clean, responsive, and user-friendly websites.
         </p>
 
-        <div className="flex justify-center gap-6">
-          <a
-            href="/projects"
-            className="bg-black text-white px-8 py-4 rounded-xl hover:bg-gray-800"
-          >
-            View My Projects
-          </a>
+        <div className="flex justify-center gap-6 flex-wrap">
 
-          <a
-            href="/contact"
-            className="border-2 border-black px-8 py-4 rounded-xl hover:bg-black hover:text-white transition"
-          >
-            Contact Me
-          </a>
-        </div>
+        <a
+          href="/projects"
+          className="bg-black text-white px-8 py-4 rounded-xl text-lg hover:bg-gray-800"
+        >
+          View My Projects
+        </a>
+
+        <a
+          href="/contact"
+          className="border-2 border-black px-8 py-4 rounded-xl text-lg hover:bg-black hover:text-white transition"
+        >
+          Contact Me
+        </a>
+
+        <a
+          href="/resume.pdf"
+          target="_blank"
+          className="bg-gray-200 px-8 py-4 rounded-xl text-lg hover:bg-gray-300"
+        >
+          Download Resume
+        </a>
+
+      </div>
       </section>
 
       {/* SKILLS */}
