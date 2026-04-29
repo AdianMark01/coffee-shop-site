@@ -1,38 +1,58 @@
 export default function ProjectsPage() {
   return (
     <main className="min-h-screen bg-amber-50 p-10">
-      <h1 className="text-5xl font-bold mb-12 text-center">
-        My Projects 💻
+      <h1 className="text-5xl font-bold text-center mb-16">
+        My Projects 🚀
       </h1>
 
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10">
 
-        {/* Project 1 */}
-        <div className="bg-white p-8 rounded-xl shadow-md">
+        {/* PROJECT 1 */}
+        <div className="bg-white p-8 rounded-2xl shadow-md">
           <h2 className="text-2xl font-bold mb-3">Coffee Shop Website</h2>
-          <p className="mb-4">
-            A responsive website built using Next.js and Tailwind CSS.
-            Includes routing, SEO, loading screens, and deployment.
+
+          <p className="text-gray-600 mb-6">
+            A modern coffee shop website built with Next.js and Tailwind CSS.
+            Includes responsive layout, blog, and multi-page routing.
           </p>
 
-          <a
-            href="https://coffee-shop-site.vercel.app"
-            target="_blank"
-            className="text-blue-600 font-semibold"
-          >
-            Live Demo →
-          </a>
+          <div className="flex gap-4">
+            <a
+              href="coffee-shop-site-one.vercel.app"
+              target="_blank"
+              className="bg-black text-white px-5 py-3 rounded-xl hover:bg-gray-800"
+            >
+              Live Demo
+            </a>
+
+            <a
+              href="https://github.com/AdianMark01/coffee-shop-site"
+              target="_blank"
+              className="border-2 border-black px-5 py-3 rounded-xl hover:bg-black hover:text-white transition"
+            >
+              GitHub
+            </a>
+          </div>
         </div>
 
-        {/* Project 2 */}
-        <div className="bg-white p-8 rounded-xl shadow-md">
-          <h2 className="text-2xl font-bold mb-3">DesignGenius (Capstone)</h2>
-          <p className="mb-4">
-            A web app that generates personalized room designs based on user
-            preferences and room dimensions.
+        {/* PROJECT 2 */}
+        <div className="bg-white p-8 rounded-2xl shadow-md">
+          <h2 className="text-2xl font-bold mb-3">More Projects Coming Soon</h2>
+
+          <p className="text-gray-600 mb-6">
+            I am currently building more web applications using React,
+            Next.js and modern web technologies.
           </p>
 
-          <span className="text-gray-500">Coming Soon</span>
+          <div className="flex gap-4">
+            <a
+              href="https://github.com/AdianMark01"
+              target="_blank"
+              className="bg-black text-white px-5 py-3 rounded-xl hover:bg-gray-800"
+            >
+              Visit My GitHub
+            </a>
+          </div>
         </div>
 
       </div>
