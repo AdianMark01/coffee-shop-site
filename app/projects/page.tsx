@@ -1,56 +1,67 @@
 export default function ProjectsPage() {
   return (
-    <main className="min-h-screen bg-amber-50 p-10">
+    <main className="min-h-screen bg-amber-50 px-6 py-24">
       <h1 className="text-5xl font-bold text-center mb-16">
-        My Projects 🚀
+        My Projects
       </h1>
 
-      <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
 
-        {/* PROJECT 1 */}
+        {/* Project 1 */}
         <div className="bg-white p-8 rounded-2xl shadow-md">
-          <h2 className="text-2xl font-bold mb-3">Coffee Shop Website</h2>
+          <h2 className="text-2xl font-bold mb-3">
+            Coffee Shop Website ☕
+          </h2>
 
           <p className="text-gray-600 mb-6">
-            A modern coffee shop website built with Next.js and Tailwind CSS.
-            Includes responsive layout, blog, and multi-page routing.
+            A modern multi-page coffee shop website built using Next.js and Tailwind.
+            Includes responsive layout, blog pages, SEO basics, and deployment via Vercel.
           </p>
 
           <div className="flex gap-4">
             <a
-              href="coffee-shop-site-one.vercel.app"
+              href="https://coffee-shop-site.vercel.app"
               target="_blank"
-              className="bg-black text-white px-5 py-3 rounded-xl hover:bg-gray-800"
+              className="bg-black text-white px-5 py-3 rounded-lg hover:bg-gray-800"
             >
-              Live Demo
+              Live Site
             </a>
 
             <a
               href="https://github.com/AdianMark01/coffee-shop-site"
               target="_blank"
-              className="border-2 border-black px-5 py-3 rounded-xl hover:bg-black hover:text-white transition"
+              className="border-2 border-black px-5 py-3 rounded-lg hover:bg-black hover:text-white"
             >
-              GitHub
+              GitHub Repo
             </a>
           </div>
         </div>
 
-        {/* PROJECT 2 */}
+        {/* Project 2 */}
         <div className="bg-white p-8 rounded-2xl shadow-md">
-          <h2 className="text-2xl font-bold mb-3">More Projects Coming Soon</h2>
+          <h2 className="text-2xl font-bold mb-3">
+            Portfolio Website 💼
+          </h2>
 
           <p className="text-gray-600 mb-6">
-            I am currently building more web applications using React,
-            Next.js and modern web technologies.
+            Personal portfolio built with Next.js showcasing my projects,
+            skills and contact page. Fully responsive and deployed online.
           </p>
 
           <div className="flex gap-4">
             <a
+              href="/"
+              className="bg-black text-white px-5 py-3 rounded-lg hover:bg-gray-800"
+            >
+              Live Site
+            </a>
+
+            <a
               href="https://github.com/AdianMark01"
               target="_blank"
-              className="bg-black text-white px-5 py-3 rounded-xl hover:bg-gray-800"
+              className="border-2 border-black px-5 py-3 rounded-lg hover:bg-black hover:text-white"
             >
-              Visit My GitHub
+              GitHub Profile
             </a>
           </div>
         </div>
