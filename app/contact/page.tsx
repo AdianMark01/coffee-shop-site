@@ -11,22 +11,32 @@ export default function ContactPage() {
           Interested in working together? Send me a message!
         </p>
 
-        <form className="space-y-6">
+        <form
+          action="https://formspree.io/f/mwpkqgqa"
+          method="POST"
+          className="space-y-6"
+        >
           <input
             type="text"
+            name="name"
             placeholder="Your Name"
+            required
             className="w-full p-4 border rounded-xl"
           />
 
           <input
             type="email"
+            name="email"
             placeholder="Your Email"
+            required
             className="w-full p-4 border rounded-xl"
           />
 
           <textarea
+            name="message"
             rows={5}
             placeholder="Your Message"
+            required
             className="w-full p-4 border rounded-xl"
           />
 
