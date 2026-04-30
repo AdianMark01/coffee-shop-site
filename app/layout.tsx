@@ -74,7 +74,7 @@ export default function RootLayout({
         {/* NAVBAR (GLOBAL) */}
         <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
           <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 className="font-bold text-xl">Brew Haven ☕</h1>
+            <h1 className="font-bold text-xl">My Portfolio</h1>
               <div className="space-x-6 font-semibold">
                 <Link href="/" className="hover:text-gray-500">Home</Link>
 
