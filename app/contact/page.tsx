@@ -1,5 +1,5 @@
 <form
-  action="https://formspree.io/f/mwpkqgqa"
+  action="https://formspree.io/f/xzdobdgg"
   method="POST"
   className="space-y-6"
 >
