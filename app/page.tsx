@@ -23,7 +23,7 @@ export default function Home() {
           </a>
 
           <a 
-            href="www.linkedin.com/in/mark-adrian-aguilar-a615b5232" 
+            href="https://www.linkedin.com/in/mark-adrian-aguilar-a615b5232" 
             target="_blank"
             className="underline hover:text-gray-600"
           >
@@ -31,7 +31,7 @@ export default function Home() {
           </a>
 
           <a 
-            href="markadrianaguilar98@gmail.com"
+            href="mailto:markadrianaguilar98@gmail.com"
             className="underline hover:text-gray-600"
           >
             Email
