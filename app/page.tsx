@@ -63,7 +63,27 @@ export default function Home() {
 
       </div>
       </section>
+      {/* ABOUT ME */}
+      <section className="py-24 bg-amber-100 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          
+          <h2 className="text-4xl font-bold mb-8">About Me</h2>
 
+          <p className="text-lg text-gray-700 leading-relaxed mb-6">
+            I’m an aspiring Frontend Developer from the Philippines passionate about
+            building clean, modern, and user-friendly websites using React and Next.js.
+            I enjoy turning ideas into real web applications and continuously improving
+            my development skills.
+          </p>
+
+          <p className="text-lg text-gray-700 leading-relaxed">
+            I am currently looking for remote junior developer opportunities where I can
+            contribute, grow, and gain real-world experience while helping businesses
+            build their online presence.
+          </p>
+
+        </div>
+      </section>
       {/* SKILLS */}
       <section className="py-24 bg-white px-6">
         <h2 className="text-4xl font-bold text-center mb-16">Skills</h2>
