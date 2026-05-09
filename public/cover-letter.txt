@@ -1,0 +1,19 @@
+Subject: Junior Frontend Developer Application
+
+Hello Hiring Team,
+
+My name is Mark Adrian Dela Cruz, and I’m an entry-level Web Developer specializing in React and Next.js. I recently built and deployed my own portfolio website where I showcase my projects and skills.
+
+Portfolio:
+https://coffee-shop-site.vercel.app
+
+I enjoy building clean, responsive, and user-friendly web applications. My recent project includes a multi-page website built with Next.js, Tailwind CSS, and deployed using Vercel.
+
+I’m currently looking for a remote junior frontend or web developer role where I can grow, contribute, and learn from an experienced team.
+
+I would love the opportunity to contribute to your company.
+
+Thank you for your time and consideration.
+
+Best regards,
+Mark Adrian Dela Cruz
